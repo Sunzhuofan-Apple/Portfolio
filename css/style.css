@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,600;1,700&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
 
 :root{
     --main-color:#333333;
@@ -11,7 +12,7 @@
     box-sizing: border-box;
     outline: none; border:none;
     text-decoration: none;
-    text-transform: capitalize;
+    /*text-transform: capitalize;*/
     transition: all .2s linear;
     line-height: 1.5;
 }
@@ -116,6 +117,16 @@ header .follow a:hover{
     cursor:pointer;
     display: none;
 }
+@font-face {
+    font-family: 'CustomFont';
+    src: url('fonts/CustomFont.ttf') format('truetype');
+}
+
+.special-font {
+    font-family: 'Rowdies', cursive;
+    font-size: 2rem;
+}
+
 
 .cursor-1{
     position: absolute;
@@ -231,7 +242,10 @@ header .follow a:hover{
     color:#333;
     font-size: 3.5rem;
 }
-
+.about .row-1 .content h4 {
+    color: #333;
+    font-size: 2.5rem;
+}
 .about .row-1 .content p{
     color:#666;
     font-size: 1.7rem;
