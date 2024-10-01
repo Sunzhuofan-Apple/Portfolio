@@ -222,7 +222,7 @@ header .follow a:hover{
 }
 
 .about .row-1 .image{
-    flex:1 1 25rem;
+    flex:0.5 0.5 20rem;
 }
 
 .about .row-1 .image img{
@@ -271,91 +271,55 @@ header .follow a:hover{
     display: flex;
     flex-wrap: wrap;
     gap:1.5rem;
-    align-items: center;
+    padding-bottom: 2rem;
 }
 
-.about .row-2 .skills{
-    flex:1 1 40rem;
+.about .row-2 .image{
+    flex:1 1 25rem;
 }
 
-.about .row-2 .skills .progress{
-    padding:1rem 0;
-}
-
-.about .row-2 .skills .progress h3{
-    display: flex;
-    justify-content: space-between;
-    padding:.7rem 0;
-    font-size: 1.9rem;
-    color:#111;
-    font-weight: 1000;
-}
-.about .row-2 .skills .progress p{
-    display: flex;
-    justify-content: space-between;
-    padding:.7rem 0;
-    font-size: 1.5rem;
-    color:#111;
-    font-weight: 400;
-}
-
-
-.about .row-2 .skills .progress .bar{
+.about .row-2 .image img{
+    height: 100%;
     width:100%;
-    background:#ccc;
-    overflow:hidden;
-    height:1rem;
-    border-radius: 50rem;
-}
-
-.about .row-2 .skills .progress .bar span{
-    display:block;
-    height:100%;
-    background:var(--main-color);
-    border-radius: 50rem;
-}
-
-.about .row-2 .skills .progress:nth-child(1) .bar span{
-    width:95%;
-}
-
-.about .row-2 .skills .progress:nth-child(2) .bar span{
-    width:80%;
-}
-
-.about .row-2 .skills .progress:nth-child(3) .bar span{
-    width:75%;
-}
-
-.about .row-2 .skills .progress:nth-child(4) .bar span{
-    width:85%;
-}
-
-.about .row-2 .box-container{
-    flex:1 1 40rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap:1.5rem;
-}
-
-.about .row-2 .box-container .box{
-    flex:1 1 15rem;
-    background:#fff;
-    padding:2rem;
+    object-fit: cover;
+    border:none;
     border-radius: .5rem;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
 }
 
-.about .row-2 .box-container .box h3{
-    color:var(--main-color);
-    font-size: 3rem;
+.about .row-2 .content{
+    flex:1 1 50rem;
 }
 
-.about .row-2 .box-container .box p{
+.about .row-2 .content h3{
+    color:#333;
+    font-size: 3.5rem;
+}
+.about .row-2 .content h4 {
+    color: #333;
+    font-size: 2.5rem;
+}
+.about .row-2 .content p{
     color:#666;
     font-size: 1.7rem;
-    padding-top: .5rem;
+    padding:.5rem 0;
 }
+
+.about .row-2 .content .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    padding: 0.5rem 0;
+}
+
+.about .row-2 .content .box-container .box{
+    flex:1 1 20rem;
+}
+
+.about .row-2 .content .box-container .box span{
+    color:var(--main-color);
+}
+
 
 .service .box-container{
     display: flex;
@@ -442,6 +406,53 @@ header .follow a:hover{
 .experience .box-container .box .content p{
     font-size: 1.5rem;
     color:#666;
+}
+/* Category container layout */
+.category-container {
+    margin-bottom: 2rem;   /* Add some space between categories */
+}
+
+/* Ensure each category's boxes are arranged as flex containers */
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;           /* Space between each box */
+}
+
+/* Responsive vertical stacking of category containers */
+.portfolio .category-container {
+    display: block;
+    margin-bottom: 2rem;
+}
+
+/* Box layout remains the same */
+.portfolio .box-container .box {
+    flex: 1 1 30rem;
+    height: 25rem;
+    position: relative;
+    overflow: hidden;
+    border: 1rem solid #fff;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    background: #fff;
+    border-radius: .5rem;
+}
+
+/* Image and other elements remain the same */
+.portfolio h2 {
+    color: #333;            /* 文字颜色设为深色 */
+    font-size: 3rem;        /* 字体大小为3rem */
+    font-weight: bold;      /* 设置字体加粗 */
+    margin-bottom: 1.5rem;  /* 标题和下方内容的间距 */
+    text-transform: uppercase; /* 字母全部大写 */
+    letter-spacing: 0.1rem; /* 字母间距稍微拉开 */
+    text-align: center;     /* 将标题左对齐 */
+}
+
+.portfolio .box-container .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: .5rem;
 }
 
 .portfolio .box-container{
