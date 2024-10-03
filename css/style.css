@@ -447,6 +447,15 @@ header .follow a:hover{
     letter-spacing: 0.1rem; /* 字母间距稍微拉开 */
     text-align: center;     /* 将标题左对齐 */
 }
+.h2 {
+    color: #333;            /* 文字颜色设为深色 */
+    font-size: 3rem;        /* 字体大小为3rem */
+    font-weight: bold;      /* 设置字体加粗 */
+    margin-bottom: 1.5rem;  /* 标题和下方内容的间距 */
+    text-transform: uppercase; /* 字母全部大写 */
+    letter-spacing: 0.1rem; /* 字母间距稍微拉开 */
+    text-align: center;     /* 将标题左对齐 */
+}
 
 .portfolio .box-container .box img {
     height: 100%;
@@ -516,6 +525,39 @@ header .follow a:hover{
     background:var(--main-color);
     color:#fff;
 }
+
+/* 为 game-box 设置定制样式，增加选择器优先级 */
+.portfolio .category-container .game-box {
+    width: 60%;          /* 将宽度减少到 60% */
+    height: 50rem;       /* 增加高度到 50rem */    /* 让 box 居中 */
+}
+
+/* 确保图片大小符合新的 box 尺寸 */
+.portfolio .category-container .game-box img {
+    width: 100%;         /* 图片宽度适应 box 的宽度 */
+    height: 100%;        /* 图片高度适应 box 的高度 */
+    object-fit: cover;   /* 确保图片保持比例且覆盖整个 box */
+}
+/* 为副标题设置灰色小字样式 */
+.subtext {
+    font-size: 0.9rem;     /* 字体大小比标题小 */
+    color: grey;           /* 设置文字颜色为灰色 */
+    margin-top: 0.2rem;    /* 与标题之间保持一点距离 */
+    text-align: center;    /* 居中对齐 */
+    font-style: italic;    /* 设置为斜体，增加视觉效果 */
+}
+
+/* 去掉 h2 链接的默认下划线 */
+.category-container a {
+    text-decoration: none;
+    color: inherit; /* 保持与标题一致的颜色 */
+}
+
+.category-container a {
+    text-decoration: none;
+    color: inherit;            /* 保持与标题一致的颜色 */
+}
+
 
 
 
